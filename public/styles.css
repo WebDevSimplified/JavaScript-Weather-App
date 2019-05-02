@@ -1,0 +1,134 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: 'Gotham Rounded', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, rgb(245, 242, 35), rgb(245, 166, 35));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 90%;
+  width: 1200px;
+  background-color: white;
+  box-shadow: 0 5px 10px black;
+  border-radius: 5px;
+}
+
+.content {
+  padding: 40px;
+  margin-top: 50px;
+}
+
+.header {
+  background-color: #222;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.icon-container {
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  top: 50px;
+  padding: 20px;
+  width: 140px;
+  height: 140px;
+}
+
+.general-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.status {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.location {
+  font-size: 2rem;
+  font-weight: normal;
+  margin-top: 10px;
+}
+
+.detail-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 0;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.detail.bordered {
+  border-left: 1px solid #777;
+  border-right: 1px solid #777;
+}
+
+.detail .title {
+  font-size: 2rem;
+  flex-grow: 1;
+  font-weight: bold;
+  color: #777;
+}
+
+.detail .value {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+.city-search-container {
+  display: flex;
+  justify-content: center;
+}
+
+.city-search {
+  margin-top: 40px;
+  font-size: 2rem;
+  outline: none;
+  border: 1px solid #777;
+  border-radius: 5px;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.pac-item {
+  font-size: 2rem;
+  padding: 10px 10px;
+}
+
+.pac-icon {
+  display: none;
+}
+
+.pac-item-query {
+  font-size: 2rem;
+  padding-right: 14px;
+}
+
+.darksky-logo {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: #333;
+  font-size: 1.5rem;
+}
